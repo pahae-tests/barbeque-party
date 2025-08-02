@@ -1,0 +1,18 @@
+@import "Tailwindcss";
+
+/* body {
+    background-image: url('../../public/bg.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(10px);
+} */
+
+button {
+    cursor: pointer;
+}
+
+ul {
+    list-style: inside;
+}
