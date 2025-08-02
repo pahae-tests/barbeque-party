@@ -139,7 +139,7 @@ const Register = ({ session }) => {
                             {/* الاسم الكامل */}
                             <div>
                                 <label htmlFor="fullName" className="block text-sm font-semibold text-red-400 mb-2">
-                                    الاسم الكامل
+                                    الاسم الكامل (من الأفضل نفس اسم الفيسبوك حتى أعرفك)
                                 </label>
                                 <input
                                     type="text"
