@@ -301,7 +301,7 @@ const Apply = ({ session }) => {
               </div> */}
 
               <div className="space-y-6">
-                <div className="text-center flex justify-center items-center w-full">
+                <div className="text-center flex flex-col justify-center items-center w-full">
                   <div className="flex flex-row justify-center items-center gap-3 w-full">
                     <h3 className="text-xl font-bold text-white mb-4">تسجيلك</h3>
                     <h2 className="w-fit text-white font-extrabold rounded-xl bg-red-600 px-2 py-1 text-lg">(باليابانية و ليس بالعربية)</h2>
