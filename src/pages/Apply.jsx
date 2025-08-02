@@ -303,6 +303,7 @@ const Apply = ({ session }) => {
               <div className="space-y-6">
                 <div className="text-center">
                   <h3 className="text-xl font-bold text-white mb-4">تسجيلك</h3>
+                  <h2 className="text-white font-extrabold rounded-xl bg-red-600 px-2 py-1 text-lg">(باليابانية و ليس بالعربية)</h2>
                   {!recordedAudio ? (
                     <button
                       onClick={isRecording ? stopRecording : startRecording}
