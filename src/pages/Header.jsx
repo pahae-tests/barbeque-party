@@ -15,7 +15,7 @@ export default function Header({ session }) {
     <header dir='ltr' className="fixed top-0 left-0 w-full h-16 bg-black/80 backdrop-blur-xl border-b border-gray-800/50 z-50">
       <div className="container mx-auto px-4 h-full flex justify-between items-center">
         <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-red-500 to-pink-500 bg-clip-text text-transparent">
-          Barbeque Party <span className='text-white hidden md:block'>🔥 حفلة الشواء</span>
+          Barbeque Party <span className='text-white hidden md:inline'>🔥 حفلة الشواء</span>
         </Link>
 
         <nav className="hidden md:flex items-center space-x-8">
