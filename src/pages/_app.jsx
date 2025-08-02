@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from '../styles/globals.css'
+import Head from 'next/head'
 
 export default function MyApp({ Component, pageProps }) {
   // function render() {
@@ -23,6 +24,9 @@ export default function MyApp({ Component, pageProps }) {
   return (
     <>
       {/* {render()} */}
+      <Head>
+        <link rel='icon' href='/logo.png'></link>
+      </Head>
       <Component {...pageProps} />
     </>
   )
