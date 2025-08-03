@@ -91,7 +91,7 @@ const AdminUsersPage = ({ session }) => {
             </div>
           </div>
 
-          <button className="px-2 py-1 bg-red-600 rounded-xl" onClick={() => setFiltered(true)}>{filtered ? 'Reset' : 'Filter'}</button>
+          <button className="px-2 py-1 bg-red-600 rounded-xl mb-4" onClick={() => setFiltered(e => !e)}>{filtered ? 'Reset' : 'Filter'}</button>
           
           {users.length === 0 ? (
             <div className="text-center py-16">
