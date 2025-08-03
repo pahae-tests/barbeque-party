@@ -6,6 +6,7 @@ import { verifyAuth } from "../middlewares/auth";
 
 const AdminUsersPage = ({ session }) => {
   const [users, setUsers] = useState([]);
+  const [filtered, setFiltered] = useState(false);
   const [loading, setLoading] = useState(true);
   const [expandedUsers, setExpandedUsers] = useState(new Set());
 
@@ -89,6 +90,8 @@ const AdminUsersPage = ({ session }) => {
               </div>
             </div>
           </div>
+
+          <button className="px-2 py-1 bg-red-600 rounded-xl" onClick={() => setFiltered(true)}>{filtered ? 'Reset' : 'Filter'</button>
           
           {users.length === 0 ? (
             <div className="text-center py-16">
@@ -98,7 +101,7 @@ const AdminUsersPage = ({ session }) => {
             </div>
           ) : (
             <div className="space-y-6 w-full md:w-3/4">
-              {users.map((user) => {
+              {(filtered ? users.filter(user => user.applies.length > 0) : users).map((user) => {
                 const hasAudios = user.applies && user.applies.length > 0;
                 const isExpanded = expandedUsers.has(user._id);
                 
